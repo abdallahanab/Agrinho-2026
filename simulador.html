@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoAgro 360 | Simulador</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animacoes.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+
+                🌱 EcoAgro 360
+
+            </div>
+
+            <ul>
+
+                <li><a href="index.html">Início</a></li>
+
+                <li><a href="relatorio.html">Relatório</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="simulador">
+
+        <section class="painelSuperior">
+
+            <h1>
+
+                Simulador de Gestão Sustentável
+
+            </h1>
+
+            <p>
+
+                Faça escolhas inteligentes para equilibrar produção agrícola e preservação ambiental.
+
+            </p>
+
+        </section>
+
+        <section class="anoAtual">
+
+            <h2>
+
+                Ano
+
+            </h2>
+
+            <h1 id="ano">
+
+                1
+
+            </h1>
+
+        </section>
+
+        <section class="dashboard">
+
+            <div class="indicador">
+
+                <h3>🌱 Solo</h3>
+
+                <progress id="solo" value="70" max="100"></progress>
+                <span id="soloTexto">70%</span>
+            </div>
+
+            <div class="indicador">
+
+                <h3>💧 Água</h3>
+
+                <progress id="agua" value="70" max="100"></progress>
+                <span id="aguaTexto">70%</span>
+
+            </div>
+
+            <div class="indicador">
+
+                <h3>💰 Economia</h3>
+
+                <progress id="economia" value="70" max="100"></progress>
+                <span id="economiaTexto">70%</span>
+
+            </div>
+
+            <div class="indicador">
+
+                <h3>🌳 Biodiversidade</h3>
+
+                <progress id="bio" value="70" max="100"></progress>
+                <span id="bioTexto">70%</span>
+
+            </div>
+
+            <div class="indicador">
+
+                <h3>🌍 Carbono</h3>
+
+                <progress id="carbono" value="40" max="100"></progress>
+                <span id="carbonoTexto">40%</span>
+
+            </div>
+
+        </section>
+
+        <section class="evento">
+
+            <h2>
+
+                Evento Climático
+
+            </h2>
+
+            <div id="eventoAtual">
+
+                Nenhum evento ocorreu ainda.
+
+            </div>
+
+        </section>
+
+        <section class="acoes">
+
+            <h2>
+
+                Escolha suas ações
+
+            </h2>
+
+            <div class="gridAcoes">
+
+                <button onclick="escolha('solar')">
+
+                    ☀️ Implantar Energia Solar
+
+                </button>
+
+                <button onclick="escolha('diesel')">
+
+                    ⛽ Utilizar Diesel
+
+                </button>
+
+                <button onclick="escolha('organico')">
+
+                    🌿 Fertilizante Orgânico
+
+                </button>
+
+                <button onclick="escolha('quimico')">
+
+                    🧪 Fertilizante Químico
+
+                </button>
+
+                <button onclick="escolha('gotejamento')">
+
+                    💧 Irrigação Inteligente
+
+                </button>
+
+                <button onclick="escolha('desperdicio')">
+
+                    🚿 Irrigação Convencional
+
+                </button>
+
+                <button onclick="escolha('rotacao')">
+
+                    🌾 Rotação de Culturas
+
+                </button>
+
+                <button onclick="escolha('mono')">
+
+                    🌽 Monocultura
+
+                </button>
+
+                <button onclick="escolha('preservar')">
+
+                    🌳 Preservar Mata
+
+                </button>
+
+                <button onclick="escolha('desmatar')">
+
+                    🪓 Desmatar Área
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="status">
+
+            <h2>
+
+                Resumo Atual
+
+            </h2>
+
+            <div id="mensagem">
+
+                Faça uma ação para iniciar a simulação.
+
+            </div>
+
+        </section>
+
+        <section class="pontuacao">
+
+            <h2>
+
+                Pontuação Geral
+
+            </h2>
+
+            <h1 id="pontos">
+
+                0
+
+            </h1>
+
+        </section>
+
+        <section class="controles">
+
+            <button onclick="proximoAno()">
+
+                Próximo Ano
+
+            </button>
+
+            <button onclick="reiniciarJogo()">
+
+                Reiniciar
+
+            </button>
+
+            <button onclick="finalizarSimulacao()">
+
+                Finalizar
+
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+
+            Projeto EcoAgro 360 • Agrinho 2026
+
+        </p>
+
+    </footer>
+
+    <script src="js/simulador.js"></script>
+
+</body>
+
+</html>
