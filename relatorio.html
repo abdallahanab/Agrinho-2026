@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoAgro 360 | Relatório Final</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animacoes.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+
+                🌱 EcoAgro 360
+
+            </div>
+
+            <ul>
+
+                <li><a href="index.html">Início</a></li>
+                <li><a href="simulador.html">Simulador</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="relatorio">
+
+        <section class="tituloRelatorio">
+
+            <h1>
+
+                Relatório Final da Fazenda
+
+            </h1>
+
+            <p>
+
+                Veja como suas decisões influenciaram o equilíbrio entre produção e meio ambiente.
+
+            </p>
+
+        </section>
+
+        <section class="resultadoPrincipal">
+
+            <h2>
+
+                Resultado Geral
+
+            </h2>
+
+            <div id="classificacao" class="classificacao">
+
+                Produtor Sustentável
+
+            </div>
+
+        </section>
+
+        <section class="cardsRelatorio">
+
+            <div class="cardRelatorio">
+
+                <h3>🌱 Solo</h3>
+
+                <span id="soloFinal">
+
+                    0%
+
+                </span>
+
+            </div>
+
+            <div class="cardRelatorio">
+
+                <h3>💧 Água</h3>
+
+                <span id="aguaFinal">
+
+                    0%
+
+                </span>
+
+            </div>
+
+            <div class="cardRelatorio">
+
+                <h3>💰 Economia</h3>
+
+                <span id="economiaFinal">
+
+                    0%
+
+                </span>
+
+            </div>
+
+            <div class="cardRelatorio">
+
+                <h3>🌳 Biodiversidade</h3>
+
+                <span id="bioFinal">
+
+                    0%
+
+                </span>
+
+            </div>
+
+            <div class="cardRelatorio">
+
+                <h3>🌍 Carbono</h3>
+
+                <span id="carbonoFinal">
+
+                    0%
+
+                </span>
+
+            </div>
+
+        </section>
+
+        <section class="pontuacaoFinal">
+
+            <h2>
+
+                Pontuação Final
+
+            </h2>
+
+            <h1 id="pontuacaoFinal">
+
+                0
+
+            </h1>
+
+        </section>
+
+        <section class="analise">
+
+            <h2>
+
+                Avaliação Inteligente
+
+            </h2>
+
+            <p id="textoAnalise">
+
+                Aguarde...
+
+            </p>
+
+        </section>
+
+        <section class="medalhas">
+
+            <h2>
+
+                Medalhas Conquistadas
+
+            </h2>
+
+            <div id="listaMedalhas" class="medalhasGrid">
+
+                <!-- JavaScript adicionará -->
+
+            </div>
+
+        </section>
+
+        <section class="conselhos">
+
+            <h2>
+
+                Recomendações
+
+            </h2>
+
+            <ul id="listaConselhos">
+
+            </ul>
+
+        </section>
+
+        <section class="acoesRelatorio">
+
+            <button onclick="window.print()">
+
+                🖨️ Imprimir Relatório
+
+            </button>
+
+            <button onclick="location.href='simulador.html'">
+
+                🔄 Jogar Novamente
+
+            </button>
+
+            <button onclick="location.href='index.html'">
+
+                🏠 Página Inicial
+
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+
+            EcoAgro 360 • Projeto desenvolvido para o Agrinho 2026
+
+        </p>
+
+    </footer>
+
+    <script src="js/relatorio.js"></script>
+
+</body>
+
+</html>
